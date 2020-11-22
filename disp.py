@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import i2c_lcd_driver #imports functions from i2c_lcd_driver.py file
 
 mylcd = i2c_lcd_driver.lcd() 
