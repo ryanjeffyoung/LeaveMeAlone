@@ -1,3 +1,4 @@
+# i2c bus (0 -- original Pi, 1 -- Rev 2 Pi)
 I2CBUS = 1
 
 # LCD Address

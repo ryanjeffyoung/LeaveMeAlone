@@ -1,3 +1,9 @@
-from RPLCD import CharLCD
-lcd = CharLCD(cols=16, rows=2, pin_rs=37, pin_e=35, pins_data=[33, 31, 29, 23])
-lcd.write_string(u'Hello world!')
+#!/usr/bin/env python
+
+import i2c_lcd_driver #imports functions from i2c_lcd_driver.py file
+
+mylcd = i2c_lcd_driver.lcd() 
+
+mylcd.lcd_clear() #clear the LCD screen
+mylcd.lcd_display_string("Testing", 1) #Display text on Line 1 of the LCD screen
+mylcd.lcd_display_string("Display", 2) #Display text on Line 2 of the LCD screen
